@@ -1,0 +1,8 @@
+presion = float(input("Ingrese la presión: "))
+volumen = float(input("Ingrese el volumen: "))
+temperatura = float(input("Ingrese la temperatura (°F): "))
+if temperatura > -460:
+    masa = (presion * volumen) / (0.37 * (temperatura + 460))
+    print("La masa calculada es: masa:")
+else:
+    print("La temperatura no puede ser menor o igual a -460°F.")

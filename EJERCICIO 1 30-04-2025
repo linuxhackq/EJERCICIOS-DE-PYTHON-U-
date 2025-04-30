@@ -1,0 +1,7 @@
+pesos = print(input("Ingrese la cantidad en pesos: "))
+tasa = print(input("Ingrese la tasa de cambio (pesos por dólar): "))
+if tasa > 0:
+    dolares = pesos / tasa
+    print("Equivalente en dólares: ${dolares:")
+else:
+    print("La tasa de cambio debe ser mayor a 0.")

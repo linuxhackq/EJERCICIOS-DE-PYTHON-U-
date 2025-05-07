@@ -1,0 +1,4 @@
+import math 
+numero = float(input("Introduce un número real: "))
+raiz_cuarta = math.sqrt(math.sqrt(numero))
+print(f"La raíz cuarta de {numero} es {raiz_cuarta}")

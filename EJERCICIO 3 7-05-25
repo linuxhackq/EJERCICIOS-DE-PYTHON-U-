@@ -1,0 +1,6 @@
+nombre_producto = input("Ingrese el nombre del producto: ")
+costo_produccion = float(input("Ingrese el costo de producción del producto: "))
+utilidad = costo_produccion * 1.2  
+impuestos = costo_produccion * 0.15  
+precio_venta = costo_produccion + utilidad + impuestos
+print(f"El precio de venta del producto '{nombre_producto}' es: ${precio_venta:.2f}")

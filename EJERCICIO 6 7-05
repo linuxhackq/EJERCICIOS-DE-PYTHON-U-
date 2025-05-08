@@ -1,0 +1,5 @@
+import math
+def calcular_norma(vector):
+    return math.sqrt(sum(x**2 for x in vector))
+vector = [3, 4]
+print(f"La norma del vector {vector} es: {calcular_norma(vector)}")

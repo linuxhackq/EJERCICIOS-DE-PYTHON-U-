@@ -1,0 +1,22 @@
+numeros = [1, 5, 10, 15, 20, 25, 30]
+k = 10
+
+menores = []
+mayores = []
+iguales = []
+multiplos = []
+
+for x in numeros:
+    if x < k:
+        menores.append(x)
+    if x > k:
+        mayores.append(x)
+    if x == k:
+        iguales.append(x)
+    if x % k == 0:
+        multiplos.append(x)
+
+print("Menores a k:", menores)
+print("Mayores a k:", mayores)
+print("Iguales a k:", iguales)
+print("Múltiplos de k:", multiplos)

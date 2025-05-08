@@ -1,0 +1,6 @@
+def poker(cartas):
+    numeros = [carta[0] for carta in cartas]
+    conteo = {numero: numeros.count(numero) for numero in numeros}
+    return 4 in conteo.values()
+cartas = [(10, 'corazones'), (10, 'picas'), (10, 'tréboles'), (10, 'diamantes'), (2, 'corazones')]
+print(poker(cartas))

@@ -1,0 +1,7 @@
+def producto_escalar(vector1, vector2):
+    if len(vector1) != len(vector2):
+        raise ValueError("Los vectores deben tener la misma longitud.")
+    return sum(a * b for a, b in zip(vector1, vector2))
+v1 = [1, 2, 3]
+v2 = [4, 5, 6]
+print(producto_escalar(v1, v2)) 

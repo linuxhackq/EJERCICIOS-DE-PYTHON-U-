@@ -1,0 +1,8 @@
+def son_ortogonales(vector1, vector2):
+    if len(vector1) != len(vector2):
+        raise ValueError("Los vectores deben tener la misma dimensión.")
+    producto_punto = sum(a * b for a, b in zip(vector1, vector2))
+    return producto_punto == 0
+v1 = [1, 2, 3]
+v2 = [-2, 1, 0]
+print(son_ortogonales(v1, v2)) 

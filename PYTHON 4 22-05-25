@@ -1,0 +1,15 @@
+nombre = input("Introduce tu nombre: ")
+sexo = input("Introduce tu sexo (H/M): ").upper()
+if sexo == "H":
+    if nombre > "N":
+        grupo = "A"
+    else:
+        grupo = "B"
+elif sexo == "M":
+    if nombre < "M":
+        grupo = "A"
+    else:
+        grupo = "B"
+else:
+    grupo = "Desconocido"
+print("Tu grupo es:", grupo)

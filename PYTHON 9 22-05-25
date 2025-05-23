@@ -1,0 +1,8 @@
+frase = input("Introduce una frase: ")
+vocal = input("Introduce una vocal: ")
+if len(vocal) == 1 and vocal.lower() in "aeiou":
+    frase_modificada = frase.replace(vocal, vocal.upper())
+    frase_modificada = frase_modificada.replace(vocal.lower(), vocal.upper())
+    print("Frase modificada:", frase_modificada)
+else:
+    print("Debes introducir una sola vocal.")

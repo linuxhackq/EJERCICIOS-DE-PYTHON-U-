@@ -1,0 +1,7 @@
+telefono = input("Introduce el número de teléfono en formato +57-320-6725875: ")
+partes = telefono.split('-')
+if len(partes) == 3:
+    numero_sin_prefijo_extension = partes[1]
+    print("Número sin prefijo ni extensión:", numero_sin_prefijo_extension)
+else:
+    print("Formato incorrecto. Debe ser +57-320-6725875")
